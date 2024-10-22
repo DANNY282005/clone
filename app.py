@@ -10,7 +10,7 @@ def get_db_connection():
         host='clonedb.cxuy6moa43xw.us-east-1.rds.amazonaws.com',
         user='admin',
         password='danielsolomon282005',
-        database='clone_db'
+        database='clone'
     )
 
 @app.route('/register', methods=['GET', 'POST'])
