@@ -10,7 +10,7 @@ def get_db_connection():
         host='clonedb.cxuy6moa43xw.us-east-1.rds.amazonaws.com',
         user='admin',
         password='danielsolomon282005',
-        database='vc'
+        database='clone_db'
     )
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -55,8 +55,8 @@ def login():
 @app.route('/dashboard')
 def dashboard():
     course_urls = [
-        'https://clonebbucket.s3.amazonaws.com/python_code.pdf',
-        'https://clonebbucket.s3.amazonaws.com/PYTHON%2BPROGRAMMING%2BNOTES.pdf'
+        'https://clonebucker1.s3.us-east-1.amazonaws.com/python_code.pdf',
+        'https://clonebbucket.s3.amazonaws.com/PYTHON%2BPhttps://clonebucker1.s3.us-east-1.amazonaws.com/PYTHON%2BPROGRAMMING%2BNOTES.pdf'
     ]
     
     return render_template('dashboard.html', course_urls=course_urls)
