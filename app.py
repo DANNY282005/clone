@@ -9,7 +9,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host='clonedb.cqczjv2nkb5f.us-east-1.rds.amazonaws.com',
         user='admin',
-        password='daniel282005@gmail.com',
+        password='daniel282005',
         database='clone_db'
     )
 
@@ -83,5 +83,5 @@ def logout():
 
 if __name__ == '__main__':
 
-    app.run(host="0.0.0.0", port=5000,debug=True)
+    app.run(debug=True)
 
